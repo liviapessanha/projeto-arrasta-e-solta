@@ -25,7 +25,7 @@ main {
  }
 .Autores {
   display: flex;
-  height: 500px;
+  height: 430px;
   width: 1275px;
   background-color: #ffff;
   border: 5px solid #FFFFFF;
@@ -79,7 +79,7 @@ cite {
 }
 
 .Frases-Autores {
-  height: 370px;
+  height: 440px;
   width: 900px;
   display: grid;
   background-color: #ffff;
@@ -101,10 +101,10 @@ cite {
   background-color: #322d2d63;
   border-color: #000;
   color: #000;
-  font-size: 15px;
+  font-size: 18px;
   border: none;
   border-radius: 16px;
-  height: 44px;
+  height: 53px;
   padding: 4px;
   transition: filter 0.2s;
 }
