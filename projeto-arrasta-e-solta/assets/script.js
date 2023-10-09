@@ -72,14 +72,20 @@ e.currentTarget.appendChild(dragItem);
 
 function verificaFrase(area, classeItem) {
   const frasesPermitidas = {
-    a:['frase1', 'frase2'],
-    b:['frase3', 'frase4', 'frase1'],
-    c:['frase5', 'frase6', 'frase1'],
+    a:['frase1', 'frase2', 'frase4', 'frase5', 'frase6'],
+    b:['frase1', 'frase2', 'frase4', 'frase5', 'frase6'],
+    c:['frase1', 'frase2', 'frase4', 'frase5', 'frase6'],
   };
 
   if(frasesPermitidas[area].includes(classeItem)) {
+    var audio1 = new Audio();
+    audio1.src = "audio/aplausos.mp3";
+    audio1.play();
     return true;
   } else {
+    var audio1 = new Audio();
+    audio1.src = "audio/bomba.mp3";
+    audio1.play();
     return false;
   }
 }
