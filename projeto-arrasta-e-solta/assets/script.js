@@ -83,9 +83,9 @@ function verificaFrase(area, classeItem) {
     audio1.play();
     return true;
   } else {
-    var audio1 = new Audio();
-    audio1.src = "audio/bomba.mp3";
-    audio1.play();
+    var audio2 = new Audio();
+    audio2.src = "audio/bomba.mp3";
+    audio2.play();
     return false;
   }
 }
