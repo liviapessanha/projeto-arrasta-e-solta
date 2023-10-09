@@ -73,8 +73,8 @@ e.currentTarget.appendChild(dragItem);
 function verificaFrase(area, classeItem) {
   const frasesPermitidas = {
     a:['frase1', 'frase2'],
-    b:['frase3', 'frase4'],
-    c:['frase5', 'frase6'],
+    b:['frase3', 'frase4', 'frase1'],
+    c:['frase5', 'frase6', 'frase1'],
   };
 
   if(frasesPermitidas[area].includes(classeItem)) {
