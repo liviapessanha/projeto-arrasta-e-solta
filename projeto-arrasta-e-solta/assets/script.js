@@ -30,9 +30,12 @@ function dragEnd(e) {
 }
 
 function dragOver(e) {
-  if(e.currentTarget.querySelector('.item') === null) {
-      e.preventDefault();
-     e.currentTarget.classList.add('hover');
+  let currentItems = e.currentTarget.querySelectorAll('.item').length;
+  
+  if (currentItems < 2) {
+    e.preventDefault();
+    e.currentTarget.classList.add('hover');
+
   }
 }
 function dragLeave(e) {
@@ -46,13 +49,10 @@ function drop(e) {
   let classeItem = dragItem.classList[1];
 
  if( verificaFrase(areaName, classeItem)) {
-    if(!dragItem.classList.contains('cloned')) {
-      let clonedItem = dragItem.cloneNode(true);
-      clonedItem.classList.add('cloned');
-      document.querySelector('.neutralArea').appendChild(clonedItem);
-    }
-
-  e.currentTarget.appendChild(dragItem);
+     e.currentTarget.appendChild(dragItem);
+     dragItem.classList.add('item-escolhido');
+ } else {
+  dragItem.classList.remove('item-escolhido');
  }
 }
  
@@ -63,18 +63,20 @@ function dragOverNeutral(e) {
 }
 function dragLeaveNeutral(e) {
 e.currentTarget.classList.remove('hover');
+
 }
 function dropNeutral(e) {
 e.currentTarget.classList.remove('hover');
 let dragItem = document.querySelector('.item.dragging');
+dragItem.classList.remove('item-escolhido');
 e.currentTarget.appendChild(dragItem);
 }
 
 function verificaFrase(area, classeItem) {
   const frasesPermitidas = {
-    a:['frase1', 'frase2', 'frase4', 'frase5'],
-    b:['frase1', 'frase2', 'frase4', 'frase5'],
-    c:['frase1', 'frase2', 'frase4', 'frase5'],
+    a:['frase1', 'frase2', 'frase3', 'frase4', 'frase5'],
+    b:['frase1', 'frase2', 'frase3', 'frase4', 'frase5'],
+    c:['frase1', 'frase2', 'frase3', 'frase4', 'frase5'],
   };
 
   if(frasesPermitidas[area].includes(classeItem)) {

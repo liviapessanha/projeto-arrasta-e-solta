@@ -5,28 +5,31 @@
 }
 header{
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   margin-bottom: -2rem;
+  font-family: 'Neoncity';
+  
+  
 }
 body {
-    min-height: 100vh;
+    height: 100%;
+    width: 100%;
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #c2b4e0;
+    background-color: #7F56D8
+    
+    
 }
 main {
     display: flex;
     flex-direction: column;
     font-family: 'Righteous', cursive;
-    background-color: #c2b4e0;
+    background-color: #7F56D8;
     margin-top: 50px;
     align-items: center;
     
 }
-.linha-vertical {
-  border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
- }
 .Autores {
   display: flex;
   height: 430px;
@@ -35,23 +38,14 @@ main {
   border: 5px solid #FFFFFF;
   border-radius: 15px;
   margin-bottom: 20px;
+
+  
 }
-.Autor1{
+.Autor{
   display: block;
-  height: 300px;
+  height: 200px;
   width: 1000px;
-  margin-right: 5rem;
-}
-.Autor2{
-  display: block;
-  height: 300px;
-  width: 1000px;
-  margin-right: 5rem;
-}
-.Autor3{
-  display: block;
-  height: 300px;
-  width: 1000px;
+  
 }
 .info-autor {
   display: flex;
@@ -87,9 +81,9 @@ cite {
 }
 .area {
   margin: 10px;
-  padding-top: 10px;
+  
   display: block;
-  height: 300px;
+  height: 200px;
   width: 400px;
   /*border: 2px solid #000;*/
 }
@@ -104,7 +98,7 @@ cite {
   text-align: center;
 }
 .question {
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 10px;
 }
 .neutralArea {
@@ -114,8 +108,7 @@ cite {
     align-content: center;
 }
 .item {
-  background-color: #322d2d63;
-  border-color: #000;
+  background-color: #7F56D8;
   color: #000;
   font-size: 18px;
   border: none;
@@ -124,12 +117,31 @@ cite {
   padding: 4px;
   transition: filter 0.2s;
 }
+.item-escolhido {
+  background-color: #7F56D8;
+  color: #000;
+  font-size: 14px;
+  border: none;
+  border-radius: 16px;
+  height: 53px;
+  padding: 4px;
+  margin-bottom: 1rem;
+  transition: filter 0.2s;
+}
 
 .item:hover {
   filter: brightness(0.9);
 
 }
 .hover {
-  background-color: #ceb9fb;
+  background-color: #ba9bfe;
 
+}
+
+@font-face {
+  font-family: 'Neoncity';
+  src: url('fontes/SuperMarioBros-ov7d.woff2') format('woff2'),
+       url('fontes/SuperMarioBros-ov7d.woff') format('woff'),
+       url('fontes/SuperMarioBros-ov7d.ttf') format('truetype');
+  
 }
