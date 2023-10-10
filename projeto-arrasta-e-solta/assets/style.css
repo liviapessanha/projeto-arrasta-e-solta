@@ -17,7 +17,7 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #7F56D8
+    background-color: #c7affb
     
     
 }
@@ -25,7 +25,7 @@ main {
     display: flex;
     flex-direction: column;
     font-family: 'Righteous', cursive;
-    background-color: #7F56D8;
+    background-color: #c7affb;
     margin-top: 50px;
     align-items: center;
     
@@ -33,7 +33,7 @@ main {
 .Autores {
   display: flex;
   height: 430px;
-  width: 1500px;
+  width: 1400px;
   background-color: #ffff;
   border: 5px solid #FFFFFF;
   border-radius: 15px;
@@ -90,7 +90,7 @@ cite {
 
 .Frases-Autores {
   height: 440px;
-  width: 900px;
+  width: 1000px;
   display: grid;
   background-color: #ffff;
   border: 5px solid #FFFFFF;
@@ -108,7 +108,7 @@ cite {
     align-content: center;
 }
 .item {
-  background-color: #7F56D8;
+  background-color: #c7affb;
   color: #000;
   font-size: 18px;
   border: none;
@@ -118,7 +118,7 @@ cite {
   transition: filter 0.2s;
 }
 .item-escolhido {
-  background-color: #7F56D8;
+  background-color: #c7affb;
   color: #000;
   font-size: 14px;
   border: none;
@@ -134,7 +134,7 @@ cite {
 
 }
 .hover {
-  background-color: #ba9bfe;
+  background-color: #c7affb;
 
 }
 
