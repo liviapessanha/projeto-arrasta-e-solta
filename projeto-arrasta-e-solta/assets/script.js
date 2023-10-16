@@ -72,6 +72,10 @@ dragItem.classList.remove('item-escolhido');
 e.currentTarget.appendChild(dragItem);
 }
 
+function recarregarAPagina(){
+  window.location.reload();
+} 
+
 function verificaFrase(area, classeItem) {
   const frasesPermitidas = {
     a:['frase1', 'frase2', 'frase4', 'frase5'],
