@@ -33,13 +33,12 @@ main {
 .Autores {
   display: flex;
   height: 430px;
-  width: 1400px;
+  width: 1470px;
   background-color: #ffff;
-  border: 5px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 15px;
   margin-bottom: 20px;
-
-  
+  border-color: #999
 }
 .Autor{
   display: block;
