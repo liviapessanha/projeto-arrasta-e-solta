@@ -145,3 +145,59 @@ cite {
        url('fontes/SuperMarioBros-ov7d.ttf') format('truetype');
   
 }
+
+@media (max-width:1600px) {
+ 
+  main {
+    margin-top: 5px;
+}
+  .Autores {
+    height: 320px;
+    width: 1220px;
+  }
+  .Autor{
+    width: 400px;
+    font-size: 15px;
+  }
+  .info-autor {
+    padding-bottom: 0;
+    padding-right: 5px;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  .quote {
+    font-size: 17px;
+  }
+  .Frases-Autores {
+    height: 420px;
+    width: 1000px;
+    font-size: 16px;
+  }
+  .question {
+    font-size: 17px;
+  }
+  .neutralArea {
+    width: 990px;
+    font-size: 16px;
+}
+.area {
+  margin: 0;
+  height: 150px;
+  width: 390px;
+}
+.item {
+  font-size: 17px;
+  border-radius: 16px;
+  
+}
+header{
+  display: none;
+}
+.item-escolhido {
+  margin-top: 10px;
+  font-size: 14px;
+  height: 65px;
+} 
+}
